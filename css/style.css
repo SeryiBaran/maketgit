@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/* Импорт */
+
+@font-face {
+	font-family: Pompadur;
+	src: url(../fonts/pompadur.ttf);
+}
+
+/* Общие стили */
+
+* {
+	box-sizing: border-box;
+}
+
+/* Структура макета */
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	margin: 0;
+}
+
+.main {
+	display: flex;
+	flex: 1;
+}
+
+.main>article {
+	flex: 1;
+}
+
+.main>aside {
+	flex: 0 0 20vw;
+	background: beige;
+}
+
+header, footer {
+	background: yellowgreen;
+	min-height: 10vh;
+}
+
+header, footer, article, aside {
+	padding: 1em;
+}
+
+/* Медиа-запрос */
+
+@media (max-width: 650px) {
+	.main {
+		flex-direction: column;
+	}
+}
+
+/* Остальные стили */
+
+marquee {
+	font-family: calibri;
+	background-color: #ffcc00;
+}
+
+.triangle, .circle {
+	display: inline-block;
+}
+
+.triangle {
+	width: 0;
+	height: 0;
+	border-bottom: 100px solid black;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+}
+
+.circle {
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	background-color: black;
+}
+
+.pompadur_p {
+	font: 20px Pompadur;
+}
+
+warning {
+	border: 1px solid red;
+	border-radius: 3px;
+	background-color: rgb(255, 0, 0, 0.3);
+}
+
+.div_audio_sidebar {
+	text-align: center;
+	font-family: calibri;
+}
+
+video {
+	height: 300px;
+	width: 530px;
+}
